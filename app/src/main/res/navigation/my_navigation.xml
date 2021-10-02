@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sardorbek.yol_xarakat_belgilari_app.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_qoshishFragment"
+            app:destination="@id/qoshishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qoshishFragment"
+        android:name="com.sardorbek.yol_xarakat_belgilari_app.QoshishFragment"
+        android:label="fragment_qoshish"
+        tools:layout="@layout/fragment_qoshish" />
+    <fragment
+        android:id="@+id/heartFragment"
+        android:name="com.sardorbek.yol_xarakat_belgilari_app.HeartFragment"
+        android:label="fragment_heart"
+        tools:layout="@layout/fragment_heart" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.sardorbek.yol_xarakat_belgilari_app.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/myHomeFragmet"
+        android:name="com.sardorbek.yol_xarakat_belgilari_app.MyHomeFragmet"
+        android:label="fragment_my_home_fragmet"
+        tools:layout="@layout/fragment_my_home_fragmet" />
+    <fragment
+        android:id="@+id/showBelgiFragment"
+        android:name="com.sardorbek.yol_xarakat_belgilari_app.ShowBelgiFragment"
+        android:label="fragment_show_belgi"
+        tools:layout="@layout/fragment_show_belgi" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.sardorbek.yol_xarakat_belgilari_app.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_qoshish" />
+</navigation>

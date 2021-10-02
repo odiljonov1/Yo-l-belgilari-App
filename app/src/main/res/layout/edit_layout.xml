@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:id="@+id/liner_1"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:gravity="center"
+        android:orientation="vertical"
+>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/pictures" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_belgi_nomi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_fon"
+        android:hint="  Yo'l belgisining nomi"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textSize="15sp"
+ />
+
+    <EditText
+        android:id="@+id/edt_belgi_tarifi"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_fon"
+        android:gravity="start"
+        android:hint="  Yo'l belisi haqida"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textSize="15sp"
+ />
+
+    <Spinner
+        android:id="@+id/spinner_turi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_fon"
+        android:gravity="center"
+       />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Saqlash"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="19dp"
+
+        android:backgroundTint="#005CA1"/>
+</LinearLayout>
